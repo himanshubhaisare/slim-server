@@ -12,11 +12,11 @@ class GetTaskAction extends TaskAction
      */
     protected function action(): Response
     {
-        $userId = (int) $this->resolveArg('id');
-        $user = $this->userRepository->findUserOfId($userId);
+        $taskId = (int) $this->resolveArg('id');
+        $task = $this->taskRepository->findTaskOfId($taskId);
 
-        $this->logger->info("User of id `${userId}` was viewed.");
+        $this->logger->info("Task of id `${taskId}` was viewed.");
 
-        return $this->respondWithData($user);
+        return $this->respondWithData($task);
     }
 }

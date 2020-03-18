@@ -12,10 +12,10 @@ class GetTasksAction extends TaskAction
      */
     protected function action(): Response
     {
-        $users = $this->userRepository->findAll();
+        $tasks = $this->taskRepository->findAll();
 
-        $this->logger->info("Users list was viewed.");
+        $this->logger->info("Tasks list was viewed.");
 
-        return $this->respondWithData($users);
+        return $this->respondWithData($tasks);
     }
 }
