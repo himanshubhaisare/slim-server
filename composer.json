@@ -28,7 +28,7 @@
         "http-interop/http-factory-guzzle": "^1.0",
         "monolog/monolog": "^1.24",
         "php-di/php-di": "^6.0",
-        "slim/psr7": "^0.5",
+        "slim/psr7": "^1.4",
         "slim/slim": "^4.1"
     },
     "require-dev": {
